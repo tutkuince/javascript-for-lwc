@@ -7,6 +7,10 @@
 
 // var course = 'zero to hero in lwc';
 // console.log(course);
+var x = 'global';
+let y = 'not global';
+console.log(this.x); // global
+console.log(this.y); // undefined
 
 // let keyword 
 // It can be updated and also cannot be re-declared
@@ -28,5 +32,5 @@
 
 const course = 'zero to hero';
 console.log(course);
-course = 'zero to hero in lwc';
+// course = 'zero to hero in lwc';
 // console.log(course); TypeError: invalid assignment to const 'course'
